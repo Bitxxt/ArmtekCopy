@@ -1,0 +1,9 @@
+.item{
+    width: 100px;
+    height: 200px;
+    background-color: brown;
+}
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;
+}
