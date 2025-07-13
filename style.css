@@ -1,9 +1,225 @@
-.item{
-    width: 100px;
-    height: 200px;
-    background-color: brown;
+/*======================================================Start Reset Css====================================================*/
+*{
+    box-sizing: border-box;
 }
-.wrapper{
-    max-width: 1060px;
+body{
+    font-family: "Noto Sans", serif;
+    background: #fff;
+    font-size: 14px;
+    line-height: 19px;
+    color: #303030;
+    margin: 0;
+    padding: 0;
+  }
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+button{
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+address{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+/*================================================End Reset Css===============================================*/
+/*==============================================Start header style===========================================*/
+header{
+    
+}
+.wrapper{/*Смотреть за тем чтобы у всех был одинаковым*/
+    max-width: 1300px;
     margin: 0 auto;
 }
+/*==============================================Start first menu style===========================================*/
+.first_menu{
+    width: 100%;
+    background-color: #172027;
+}
+.first_menu .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cap_list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    list-style-type: none;
+}
+.cap_item{
+    margin-right: 10px;
+}
+.cap_item:last-child{
+    margin-right:0px;
+}
+.cap_link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.cap_link:hover{
+   color: #f57c00;
+}
+
+.social_info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.social_item{
+    padding: 0;
+    margin-right: 10px;
+}
+
+.social_item:last-child{
+    margin-right: 0;
+}
+/*==============================================End first menu style===========================================*/
+/*==============================================Start main menu style===========================================*/
+.main_menu{
+    width: 100%;
+    background-color: #30393F;
+}
+.main_menu .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catalog-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f57c00;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.catalog-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 2px solid #f57c00; /* оранжевая рамка */
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  width: 700px;
+  font-family: sans-serif;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.example-section {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+.example-text {
+  margin-right: 5px;
+}
+
+.info-icon {
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.search-button {
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.search-button:hover {
+  background-color: #e56c00;
+}
+
+.navigation_button {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navigation_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.navigation_item img {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 4px;
+}
+
+
+/*==============================================End main menu style===========================================*/
+/*==============================================Start low menu style===========================================*/
+.low_menu{
+  background-color: #30393F;
+  width: 100%;
+}
+.nuv_list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.nuv_list{
+  list-style-type: none;
+  
+}
+.nuv_link{
+  color: #fff;
+}
+.nuv_link:hover {
+  color: #f57c00;
+}
+/*==============================================End low menu style===========================================*/
+/*================================================End header style==================================*/
+
