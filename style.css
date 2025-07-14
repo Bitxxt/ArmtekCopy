@@ -1,3 +1,9 @@
+body {
+margin:0;
+
+
+
+}
 .item{
     width: 100px;
     height: 200px;
@@ -7,3 +13,17 @@
     max-width: 1060px;
     margin: 0 auto;
 }
+/*------------footer----------*/
+h1{
+    color: #fff;
+}
+.TextBF {
+    background-color: #30393F;
+    color: #ACAFB2;
+    width: 100%;
+    height: 325px;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 292px; 
+    vertical-align: middle;
+ }
