@@ -37,189 +37,193 @@ header{
 }
 
 /*==============================================Start first menu style===========================================*/
-.first_menu{
+.first_menu {
     width: 100%;
-    background-color: #172027;
+    background-color: #232a2e;
+    min-height: 40px;
+    font-size: 14px;
 }
 .first_menu .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.cap_list{
+.cap_list {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-.cap_item{
+.cap_item {
     margin-right: 10px;
 }
-.cap_item:last-child{
-    margin-right:0px;
+.cap_item:last-child {
+    margin-right: 0;
 }
-.cap_link{
+.cap_link {
     color: #fff;
     text-decoration: none;
+    transition: color 0.2s;
 }
-
-.cap_link:hover{
-   color: #f57c00;
+.cap_link:hover {
+    color: #f57c00;
 }
-
-.social_info{
+.social_info {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
 }
-
-.social_item{
+.social_item {
     padding: 0;
     margin-right: 10px;
 }
-
-.social_item:last-child{
+.social_item:last-child {
     margin-right: 0;
 }
 /*==============================================End first menu style===========================================*/
 /*==============================================Start main menu style===========================================*/
-.main_menu{
+.main_menu {
     width: 100%;
-    background-color: #30393F;
+    background-color: #30393f;
+    min-height: 60px;
 }
 .main_menu .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.main_logo img {
+    height: 40px;
 }
 .catalog-button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #f57c00;
-  border: none;
-  border-radius: 8px;
-  color: #fff;
-  padding: 10px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f57c00;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
 }
-
 .catalog-button img {
-  width: 20px;
-  height: 20px;
+    height: 24px;
+    width: 24px;
 }
-
 .search-bar {
-  display: flex;
-  align-items: center;
-  border: 2px solid #f57c00; /* оранжевая рамка */
-  border-radius: 8px;
-  overflow: hidden;
-  background-color: white;
-  width: 700px;
-  font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    border: 2px solid #f57c00;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 40px;
+    width: 700px;
+    margin: 0 20px;
+    position: relative;
 }
-
 .search-bar input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  outline: none;
-  font-size: 14px;
-  color: #333;
+    flex: 1;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    height: 100%;
+    background: transparent;
 }
-
 .example-section {
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-  font-size: 14px;
-  color: #a0a0a0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-right: 10px;
+    color: #bdbdbd;
+    font-size: 13px;
 }
-
-.example-text {
-  margin-right: 5px;
-}
-
-.info-icon {
-  background-color: #e0e0e0;
-  border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  font-size: 12px;
-  text-align: center;
-  line-height: 16px;
-  cursor: pointer;
-}
-
 .search-button {
-  background-color: #f57c00;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background 0.3s;
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    padding: 0 16px;
+    height: 100%;
+    font-size: 18px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
 }
-
-.search-icon {
-  width: 20px;
-  height: 20px;
-}
-
 .search-button:hover {
-  background-color: #e56c00;
+    background-color: #e56c00;
 }
-
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
 .navigation_button {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
-
 .navigation_item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
 }
-
 .navigation_item img {
-  width: 54px;
-  height: 54px;
-  margin-bottom: 4px;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 2px;
 }
-
+.navigation_item:hover {
+    color: #f57c00;
+}
 
 /*==============================================End main menu style===========================================*/
 /*==============================================Start low menu style===========================================*/
-.low_menu{
-  background-color: #30393F;
-  width: 100%;
+.low_menu {
+    background-color: #30393f;
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
 }
-.nuv_list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style-type: none;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+.low_menu .wrapper {
+    display: flex;
+    align-items: center;
 }
-.nuv_list{
-  list-style-type: none;
-  
+.nuv_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
 }
-.nuv_link{
-  color: #fff;
+.nuv_link {
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0;
+    transition: color 0.2s;
+    text-decoration: none;
 }
 .nuv_link:hover {
-  color: #f57c00;
+    color: #f57c00;
+}
+.nuv_link.special {
+    color: #e53935;
+    font-weight: 700;
 }
 /*==============================================End low menu style===========================================*/
 /*================================================End header style==================================*/
