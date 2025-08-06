@@ -24,6 +24,10 @@ h1{
     height: 325px;
     text-align: left;
     line-height: 30px;
-    padding-left: 292px; 
+    padding-left: 0px; 
     vertical-align: middle;
+ }
+
+ footer {
+    width: 100%;
  }
