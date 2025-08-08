@@ -28,9 +28,6 @@ a{
 }
 /*================================================End Reset Css===============================================*/
 /*==============================================Start header style===========================================*/
-header{
-    
-}
 .wrapper{/*Смотреть за тем чтобы у всех был одинаковым*/
     max-width: 1300px;
     margin: 0 auto;
@@ -76,8 +73,14 @@ header{
     align-items: flex-end;
 }
 .social_item {
+    display: block;
     padding: 0;
-    margin-right: 10px;
+    margin-right: 15px;
+}
+.social_item img {
+    width: 20px;   /* нужный размер */
+    height: 20px;  /* нужный размер */
+    display: block;
 }
 .social_item:last-child {
     margin-right: 0;
@@ -96,7 +99,7 @@ header{
     gap: 20px;
 }
 .main_logo img {
-    height: 40px;
+    height: 25px;
 }
 .catalog-button {
     display: flex;
