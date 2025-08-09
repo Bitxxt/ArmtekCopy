@@ -27,6 +27,11 @@ a{
     text-decoration: none;
 }
 /*================================================End Reset Css===============================================*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
 /*==============================================Start header style===========================================*/
 .wrapper{/*Смотреть за тем чтобы у всех был одинаковым*/
     max-width: 1300px;
@@ -44,6 +49,30 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.cap_item.location .location_link {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #fff;
+    gap: 5px;
+    padding-right: 15px;
+}
+.location_icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+    opacity: 0.8;
+}
+.arrow_icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 1px;
+    opacity: 0.7;
+}
+.cap_item.location span {
+    font-weight: 700;
+    color: #fff;
 }
 .cap_list {
     display: flex;
@@ -77,7 +106,7 @@ a{
     padding: 0;
     margin-right: 15px;
 }
-.social_item img {
+.common_icon{
     width: 20px;   /* нужный размер */
     height: 20px;  /* нужный размер */
     display: block;
@@ -85,6 +114,29 @@ a{
 .social_item:last-child {
     margin-right: 0;
 }
+.phone {
+    display: inline-flex;
+    align-items: center; /* выравнивание по вертикали */
+}
+
+.icon-telephon {
+    display: block;
+    margin: 0; /* убираем отступ */
+    padding: 0;
+    width: 15px;   /* нужный размер */
+    height: 15px;
+    
+}
+.phone span {
+    margin: 0; /* убираем отступ */
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+
 /*==============================================End first menu style===========================================*/
 /*==============================================Start main menu style===========================================*/
 .main_menu {
@@ -216,10 +268,12 @@ a{
 }
 .nuv_link {
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     padding: 10px 0;
     transition: color 0.2s;
     text-decoration: none;
+    
+    
 }
 .nuv_link:hover {
     color: #f57c00;
