@@ -42,13 +42,14 @@ body {
 .first_menu {
     width: 100%;
     background-color: #232a2e;
-    min-height: 40px;
+    height: 40px; /* замените min-height на height */
     font-size: 14px;
 }
 .first_menu .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%; /* добавьте */
 }
 .cap_item.location .location_link {
     display: flex;
@@ -142,13 +143,14 @@ body {
 .main_menu {
     width: 100%;
     background-color: #30393f;
-    min-height: 60px;
+    height: 70px; /* замените min-height на height, подберите нужное значение */
 }
 .main_menu .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    height: 100%; /* добавьте */
 }
 .main_logo img {
     height: 25px;
@@ -253,6 +255,9 @@ body {
     align-items: center;
 }
 .low_menu .wrapper {
+     max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -264,7 +269,7 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 30px;
+    gap: 32px;
 }
 .nuv_link {
     color: #fff;
