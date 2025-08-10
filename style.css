@@ -65,6 +65,24 @@ body {
     margin-right: 3px;
     opacity: 0.8;
 }
+/* Подсветка "Минск" и иконок при наведении */
+.cap_item.location .location_link:hover,
+.cap_item.location .location_link:focus {
+    color: #f57c00;
+}
+.cap_item.location .location_link:hover .location_icon,
+.cap_item.location .location_link:focus .location_icon,
+.cap_item.location .location_link:hover .arrow_icon,
+.cap_item.location .location_link:focus .arrow_icon {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(92%) saturate(1812%) hue-rotate(1deg) brightness(101%) contrast(101%);
+    /* Делает иконку оранжевой */
+}
+/* Минск: подсвечивать span при наведении */
+.cap_item.location .location_link:hover span,
+.cap_item.location .location_link:focus span {
+    color: #f57c00;
+}
+
 .arrow_icon {
     width: 18px;
     height: 18px;
@@ -137,6 +155,22 @@ body {
     font-weight: 600;
     
 }
+/* Подсветка иконок соцсетей при наведении */
+.social_item:hover .common_icon,
+.social_item:focus .common_icon,
+.social_item:hover .icon-telephon,
+.social_item:focus .icon-telephon {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(92%) saturate(1812%) hue-rotate(1deg) brightness(101%) contrast(101%);
+    /* Оранжевый фильтр */
+}
+
+/* Телефон: подсвечивать цифры при наведении */
+.social_item:hover .phone span,
+.social_item:focus .phone span {
+    color: #f57c00;
+}
+
+
 
 /*==============================================End first menu style===========================================*/
 /*==============================================Start main menu style===========================================*/
@@ -245,6 +279,16 @@ body {
     color: #f57c00;
 }
 
+/* Подсветка всей кнопки навигации (иконка + текст) */
+.navigation_item:hover,
+.navigation_item:focus {
+    color: #f57c00;
+}
+.navigation_item:hover img,
+.navigation_item:focus img {
+    filter: brightness(0) saturate(100%) invert(53%) sepia(92%) saturate(1812%) hue-rotate(1deg) brightness(101%) contrast(101%);
+}
+
 /*==============================================End main menu style===========================================*/
 /*==============================================Start low menu style===========================================*/
 .low_menu {
@@ -289,5 +333,7 @@ body {
 }
 /*==============================================End low menu style===========================================*/
 /*================================================End header style==================================*/
+
+
 
 
