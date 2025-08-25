@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/product-item.css">
+    <link rel="stylesheet" href="./styles/main-page-cdp.css">
+</head>
+
+<body>
+    <div id="mainPageCdp">
+        <nav>
+            <ul>
+                <li>
+                    <button>
+                        Акции
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        Новинки
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        Хиты
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        Сезон
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <button onclick="scrollImages(this, `right`, document.querySelector('#mainPageCdp>div>.productItemsTable1'))">
+                <i class="bi bi-caret-left"></i>
+            </button>
+            <div class="productItemsTable1">
+
+            </div>
+            <button onclick="scrollImages(this, `left`, document.querySelector('#mainPageCdp>div>.productItemsTable1'))">
+                <i class="bi bi-caret-right"></i>
+            </button>
+        </div>
+    </div>
+    <!-- element -->
+    <!-- <div class="product-item" id="test">
+        <div class="favourite-wrapper">
+            <button onclick="changeIcon(this)"><i class="bi bi-heart"></i></button>
+        </div>
+        <div class="image-content">
+            <div class="card-gallery">
+            </div>
+            <div class="image-selected-dots"></div>
+        </div>
+        <div class="product-content">
+            <div class="price">price</div>
+            <div class="prod-info">
+                <div class="model-manufacturer">
+                    MANUFACTORER &middot; MODEL
+                </div>
+                <p class="description">Description</p>
+            </div>
+            <div class="button-wrapper">
+                <button>Buy</button>
+            </div>
+            <div class="delivery-time">time</div>
+        </div>
+    </div> -->
+    <!-- element -->
+
+
+    <script>
+
+        window.onload = () => {
+            createTable(document.querySelector("#mainPageCdp>div>.productItemsTable1")).then(() => {
+                decideProductItemsWidth(document.querySelector("#mainPageCdp>div>.productItemsTable1"), 16)
+                addEventListener("resize", (event) => { decideProductItemsWidth(document.querySelector("#mainPageCdp>div>.productItemsTable1"), 16, 1) })
+            })
+        }
+
+        function decideProductItemsWidth(container, rowGap, resizing) {
+            let containerWidth = container.getBoundingClientRect().width
+            let numberOfElements = Math.floor(containerWidth / (175))//hardcoded min-width D:
+
+            if ((containerWidth - rowGap * (numberOfElements - 1)) / numberOfElements < 175) {
+                numberOfElements -= 1
+            }
+
+            let itemWidth = (containerWidth - rowGap * (numberOfElements - 1)) / numberOfElements;
+            Array.from(container.getElementsByClassName("product-item")).forEach((item) => {
+                item.style.width = itemWidth + "px"
+            })
+
+            if (resizing) {
+                if (container.scrollLeft != 0) {
+                    container.scrollBy({
+                        left: -(container.scrollLeft - container.getBoundingClientRect().width - 16),//including row gap
+                        behavior: 'instant'
+                    })
+                }
+                console.log(container.scrollLeft)
+            }
+        }
+
+        //document.getElementById("kiidw").parentElement
+
+    </script>
+    <script src="./js/change-icon.js"></script>
+    <script src="./js/set-properties.js"></script>
+    <script src="./js/create-product-item.js"></script>
+    <script src="./js/create-table.js"></script>
+    <script src="./js/scroll-images.js"></script>
+    <script src="./js/main-page-cdp-category.js"></script>
+</body>
+
+</html>

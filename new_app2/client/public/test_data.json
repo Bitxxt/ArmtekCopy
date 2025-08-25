@@ -1,0 +1,160 @@
+{
+    "data": [
+        {
+            "price": 120,
+            "currency": "p.",
+            "sale": 10,
+            "description": "Очиститель моторных механизмов",
+            "time": "Завтра в 9:00",
+            "manufactorer": "BOSCH",
+            "model": "A12E-89",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg",
+                "./images/helixultra5w30550046268_shell_625006f5bf07f.jpg",
+                "./images/thumb_107369_654_654_0_0_crop.jpg"
+            ]
+        },
+        {
+            "price": 180,
+            "currency": "p.",
+            "sale": 5,
+            "description": "Датчики температуры автомобильные LUZAR модели LS-2007",
+            "time": "Завтра в 17:00",
+            "manufactorer": "LUZAR",
+            "model": "LS-2007",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg"
+            ]
+        },
+        {
+            "price": 120,
+            "currency": "p.",
+            "sale": 5,
+            "description": "Очиститель моторных механизмов LAVR! очиститель",
+            "time": "Завтра в 12:00",
+            "manufactorer": "LAVR",
+            "model": "12-4563PO",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg",
+                "./images/thumb_107369_654_654_0_0_crop.jpg"
+            ]
+        },
+        {
+            "price": 120,
+            "currency": "p.",
+            "sale": 5,
+            "description": "Очиститель моторных механизмов",
+            "time": "Завтра в 9:00",
+            "manufactorer": "BOSCH",
+            "model": "A12E-89",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg",
+                "./images/helixultra5w30550046268_shell_625006f5bf07f.jpg",
+                "./images/thumb_107369_654_654_0_0_crop.jpg"
+            ]
+        },
+        {
+            "price": 180,
+            "currency": "p.",
+            "sale": 10,
+            "description": "Датчики температуры автомобильные LUZAR модели LS-2007",
+            "time": "Завтра в 17:00",
+            "manufactorer": "LUZAR",
+            "model": "LS-2007",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg"
+            ]
+        },
+        {
+            "price": 120,
+            "currency": "p.",
+            "sale": 10,
+            "description": "Очиститель моторных механизмов LAVR! очиститель",
+            "time": "Завтра в 12:00",
+            "manufactorer": "LAVR",
+            "model": "12-4563PO",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg",
+                "./images/thumb_107369_654_654_0_0_crop.jpg"
+            ]
+        },
+        {
+            "price": 120,
+            "currency": "p.",
+            "sale": 4,
+            "description": "Очиститель моторных механизмов",
+            "time": "Завтра в 9:00",
+            "manufactorer": "BOSCH",
+            "model": "A12E-89",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg",
+                "./images/helixultra5w30550046268_shell_625006f5bf07f.jpg",
+                "./images/thumb_107369_654_654_0_0_crop.jpg"
+            ]
+        },
+        {
+            "price": 180,
+            "currency": "p.",
+            "sale": 2,
+            "description": "Датчики температуры автомобильные LUZAR модели LS-2007",
+            "time": "Завтра в 17:00",
+            "manufactorer": "LUZAR",
+            "model": "LS-2007",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg"
+            ]
+        },
+        {
+            "price": 120,
+            "currency": "p.",
+            "sale": 10,
+            "description": "Очиститель моторных механизмов LAVR! очиститель",
+            "time": "Завтра в 12:00",
+            "manufactorer": "LAVR",
+            "model": "12-4563PO",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg",
+                "./images/thumb_107369_654_654_0_0_crop.jpg"
+            ]
+        },
+        {
+            "price": 120,
+            "currency": "p.",
+            "sale": 10,
+            "description": "Очиститель моторных механизмов",
+            "time": "Завтра в 9:00",
+            "manufactorer": "BOSCH",
+            "model": "A12E-89",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg",
+                "./images/helixultra5w30550046268_shell_625006f5bf07f.jpg",
+                "./images/thumb_107369_654_654_0_0_crop.jpg"
+            ]
+        },
+        {
+            "price": 180,
+            "currency": "p.",
+            "sale": 6,
+            "description": "Датчики температуры автомобильные LUZAR модели LS-2007",
+            "time": "Завтра в 17:00",
+            "manufactorer": "LUZAR",
+            "model": "LS-2007",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg"
+            ]
+        },
+        {
+            "price": 120,
+            "currency": "p.",
+            "sale": 10,
+            "description": "Очиститель моторных механизмов LAVR! очиститель",
+            "time": "Завтра в 12:00",
+            "manufactorer": "LAVR",
+            "model": "12-4563PO",
+            "images": [
+                "./images/helixultra5w30550046268_shell_62502eef94bcb.jpg",
+                "./images/thumb_107369_654_654_0_0_crop.jpg"
+            ]
+        }
+    ]
+}

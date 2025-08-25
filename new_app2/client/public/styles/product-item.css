@@ -1,0 +1,182 @@
+.product-item {
+  font-size: 14px;
+
+  box-sizing: border-box;
+  background-color: white;
+  /* filter: drop-shadow(0 0 1vh rgba(0, 0, 0, 0.1)); */
+  border-radius: 1vh;
+  font-family: 'Nunito';
+  position: relative;
+
+  height: 320px;
+
+  min-width: 175px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.product-item a{
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 1vh 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-item:hover {
+  filter: drop-shadow(0 0 1.5vh rgba(0, 0, 0, 0.2));
+}
+
+.favourite-wrapper {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+}
+
+.favourite-wrapper button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: 1.3em;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button-wrapper button {
+  background-color: var(--main-accent-color);
+  border: 0;
+  box-sizing: border-box;
+  width: 95%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: white;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.price {
+  font-size: 1.214em;
+  font-weight: 700;
+}
+
+.price>span{
+  font-size: 14px;
+  color: var(--lighter-text);
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.description {
+  font-weight: 800;
+  margin: 0;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.model-manufacturer {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.button-wrapper button:hover {
+  animation-name: button-lighter;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.delivery-time {
+  align-self: center;
+  font-weight: 500;
+}
+
+.image-content {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5%;
+  position: relative;
+}
+
+.image-content .discount-badge{
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.image-content .discount-badge mark{
+  display: inline-block;
+  padding: 0.2em 0.8em 0.2em 0.8em;
+  color: white;
+  background-color: var(--discount-color);
+  font-weight: bolder;
+  border-radius: 1em;
+  font-size: 0.714em;
+  font-weight: 850;
+}
+
+.image-content>div:not(.image-selected-dots){
+  height: 90%;
+  position: relative;
+}
+
+.card-gallery {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  object-fit: contain;
+}
+
+.card-gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.image-selected-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-selected-dots i {
+  /* padding-left: 0.2em;
+  padding-right: 0.2em; */
+  display: block;
+  font-size: 0.3em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  color: var(--lighter-text);
+}
+
+@keyframes button-lighter {
+  from {
+    background-color: orange;
+  }
+
+  to {
+    background-color: lightsalmon;
+  }
+}
