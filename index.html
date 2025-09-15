@@ -129,7 +129,43 @@
                 </div>
             </section>
         </div>
-        <div class="item"></div>
+            <section class="car_parts_search">
+                <p class="title_search">Начните поиск запчастей по VIN или по марке вашего автомобиля</p>
+                <div class="tabs">
+                    <button class="tab active" data-tab="vin">Поиск по VIN</button>
+                    <button class="tab" data-tab="brand">Поиск по марке авто</button>
+                </div>
+
+                <div class="tab-content active" id="vin">
+                    <form class="search-form">
+                    <input type="text" placeholder="VIN">
+                    <input type="text" placeholder="Наименование запчасти">
+                    <button type="submit">Найти</button>
+                    </form>
+                </div>
+
+                <div class="tab-content" id="brand">
+                    <form class="search-form">
+                    <select>
+                        <option>Марка</option>
+                    </select>
+                    <select>
+                        <option>Модель</option>
+                    </select>
+                    <select>
+                        <option>Год</option>
+                    </select>
+                    <select>
+                        <option>Двигатель</option>
+                    </select>
+                    <select>
+                        <option>Модификация</option>
+                    </select>
+                    <button type="submit">Найти</button>
+                    </form>
+                </div>
+            </section>
+
     </main>
     <footer></footer>
 </body>

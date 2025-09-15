@@ -456,6 +456,108 @@ body {
 }
 
 /*================================================End discount_banner style=============================================*/
+/*================================================Start car_parts_search style=============================================*/
+.car_parts_search {
+  max-width: 1300px;
+  margin: 40px auto;
+  font-family: 'Nunito', sans-serif;
+}
+
+.car_parts_search p {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  margin-bottom: -1px; /* чтобы активная вкладка сливалась с формой */
+}
+
+.tab {
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  border-bottom: none; /* чтобы не мешало при стыковке */
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+  transition: 0.3s;
+}
+
+.tab + .tab {
+  margin-left: 5px;
+}
+
+.tab.active {
+  background: #fff;
+  color: #000;
+  border-bottom: 1px solid #fff; /* убираем линию снизу, чтобы слить с tab-content */
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0 6px 6px 6px;
+  padding: 20px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Form */
+.search-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: #f3f3f3;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.search-form input,
+.search-form select {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+}
+
+.search-form input:focus,
+.search-form select:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 0 2px rgba(255,102,0,0.2);
+}
+
+/* Button */
+.search-form button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-form button:hover {
+  background: #e65500;
+}
+/*================================================End car_parts_search style=============================================*/
+
 /*================================================End main style==========================================
 
 
